@@ -21,6 +21,12 @@ poly.exe: polymorphism_non_ptr.cpp
 trim_lines.exe: trim_lines.cpp 
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
+IntSet_test.exe: IntSet_test.cpp IntSet.h
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+UnsortedSet.exe: UnsortedSet.cpp
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
 all: q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe
 
 q1.exe: q1.cpp 
@@ -70,9 +76,6 @@ clean:
 CPD ?= /usr/um/pmd-6.0.1/bin/run.sh cpd
 OCLINT ?= /usr/um/oclint-0.13/bin/oclint
 FILES := \
-  char.cpp \
-	polymorphism_non_ptr.cpp \
-	trim_lines.cpp \
 	q1.cpp \
 	q2.cpp \
 	q3.cpp \
@@ -83,8 +86,9 @@ FILES := \
 	q8.cpp \
 	q9.cpp \
 	q10.cpp \
-	mid1_review.cpp \
-	main.cpp \
+	IntSet.h \
+	UnsortedSet.cpp \
+	IntSet_test.cpp \
 
 
 
