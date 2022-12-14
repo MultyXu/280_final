@@ -27,7 +27,8 @@ IntSet_test.exe: IntSet_test.cpp IntSet.h
 UnsortedSet.exe: UnsortedSet.cpp
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
-all: q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe
+
+all: q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe q11.exe q12.exe q13.exe q14.exe q15.exe
 
 q1.exe: q1.cpp 
 	$(CXX) $(CXXFLAGS) $^ -o $@
@@ -56,10 +57,26 @@ q8.exe: q8.cpp
 q9.exe: q9.cpp 
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
-mid1_review.exe: mid1_review.cpp 
+q10.exe: q10.cpp 
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
-q10.exe: q10.cpp 
+q11.exe: q11.cpp 
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+q12.exe: q12.cpp 
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+q13.exe: q13.cpp 
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+q14.exe: q14.cpp 
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+q15.exe: q15.cpp 
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+
+mid1_review.exe: mid1_review.cpp 
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
 main.exe: main.cpp 
@@ -86,6 +103,11 @@ FILES := \
 	q8.cpp \
 	q9.cpp \
 	q10.cpp \
+	q11.cpp \
+	q12.cpp \
+	q13.cpp \
+	q14.cpp \
+	q15.cpp \
 	IntSet.h \
 	UnsortedSet.cpp \
 	IntSet_test.cpp \
